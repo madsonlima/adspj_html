@@ -1,0 +1,63 @@
+/*Alterações planejadas:*/
+/*Melhorar o posicionamento dos elementos do body (centralizar o site).*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/**************************************************/
+*{
+    margin: auto;
+    text-align: center;
+}
+h2{
+    padding-bottom: 1%;
+}
+a{
+    color: rgb(11, 85, 166);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(11, 85, 166);
+}
+a:hover{
+    color: rgb(11, 85, 166);
+    text-decoration: underline;
+}
+/**************************************************/
+body{
+    color: rgb(28, 39, 34);
+    font: normal 12pt 'Roboto';
+    
+    background-color: rgb(201, 53, 48);
+    width: 50%;
+    padding: 5%;
+}
+/**************************************************/
+header{
+    text-align: center;
+
+    padding: 5%;
+    border-radius: 10px;
+    background-color: rgb(238, 242, 244);
+    box-shadow: 4px 4px 0px rgb(79, 193, 226);
+}
+/**************************************************/
+section{
+    padding: 5%;
+
+    border-radius: 10px;
+    background-color: rgb(238, 242, 244);
+    box-shadow: 4px 4px 0px rgb(79, 193, 226);
+}
+/**************************************************/
+footer{
+    color: rgb(238, 242, 244);
+    font-style: italic;
+    text-align: center;
+
+    padding: 5%;
+}
+#instagram{
+    color: rgb(238, 242, 244);
+}
+#instagram:hover{
+    text-decoration: underline;
+}
+/**************************************************/
