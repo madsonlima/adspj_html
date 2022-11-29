@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!-- CSS dos ícones iconscout.com -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Inclusão do jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!-- Inclusão do plugin de validação (jquery validation) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Hello World</a></div>
+            <div class="navbarLista">
+                <ul class="navbarLinks">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="./index.html #news_">NOTÍCIAS</a></li>
+                    <li><a href="./sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="./index.html #cursos_">CURSOS</a></li>
+                    <li><a href="login.html">INICIAR SESSÃO</a></li>
+                </ul>
+            </div>
+            <!-- Menu responsivo -->
+            <div class="botaoMenuResponsivo">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+            <div class="caixaPesquisa">
+                <input type="text" placeholder="Pesquisar...">
+            </div>
+        </div>
+    </nav>
+    
+    <section class="sectionSeparador"></section>
+
+    <section id="sectionCadastro">
+        <div class="formulario-espaco">
+            <div class="formulario">
+                <div class="formulario-especifico">
+                    <span class="formulario-titulo">Cadastro</span>
+                    <form id="frmCadastro" action="#">
+                        <div class="input-espaco-cadastro inputiconpx">
+                            <span class="texto-cadastro">Nome:</span><br>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                            <i class="uil uil-letter-english-a icon"></i>
+                        </div>
+                        <div class="input-espaco-cadastro inputiconpx">
+                            <span class="texto-cadastro">CPF:</span><br>
+                            <input type="text" name="cpf" id="cpf" onkeypress="$(this).mask('000.000.000-00')" placeholder="000.000.000-00" required>
+                            <i class="uil uil-user-square icon"></i>
+                        </div>
+
+                        <div class="input-espaco-cadastro inputiconpx">
+                            <span class="texto-cadastro">Data de nascimento:</span><br>
+                            <input type="date" name="dataNasc" id="dataNasc" onkeypress="$(this).mask('00/00/0000')" placeholder="30/12/2000" required>
+                            <i class="uil uil-calender icon"></i>
+                        </div>
+
+                        <div class="input-espaco-cadastro inputiconpx">
+                            <span class="texto-cadastro">Telefone celular:</span><br>
+                            <input type="text" name="celular" id="celular"  placeholder="(99)9999-9999" onkeypress="$(this).mask('(00)00000-0000')" required>
+                            <i class="uil uil-phone-alt icon"></i>
+                        </div>
+
+                        <div class="input-espaco-cadastro inputiconpx">
+                            <span class="texto-cadastro">Email:</span><br>
+                            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+
+                        <div class="input-espaco-cadastro inputiconpx">
+                            <span class="texto-cadastro">Confirmar email:</span><br>
+                            <input type="email" name="emailconf" id="emailconf" placeholder="exemplo@gmail.com" required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+
+                        <div class="input-espaco-cadastro inputiconpx">
+                            <span class="texto-cadastro">Senha:</span><br>
+                            <input type="password" name="senha" id="senha" placeholder="••••••••" required>
+                            <i class="uil uil-padlock icon"></i>
+                        </div>
+
+                        <div class="input-espaco-cadastro inputiconpx">
+                            <span class="texto-cadastro">Confirmar senha:</span><br>
+                            <input type="password" name="senhaconf" id="senhaconf" placeholder="••••••••" required>
+                            <i class="uil uil-padlock icon"></i>
+                        </div>
+
+                        <div class="checkbox-espaco">
+                            <div class="checkbox-conteudo">
+                                <input type="checkbox" id="checkbox-cadastro">
+                                <label for="checkbox-cadastro" class="texto-form">Li e concordo com os termos.</label>
+                            </div>
+                        </div>
+
+                        <div class="botaoLogin">
+                            <button class="botao">Cadastrar</button>
+                        </div>
+                        
+                    </form>
+                    <div class="login-cadastro">
+                        <span class="texto-form">Já tem uma conta? <a href="login.html" class="texto-form texto-signup">Acesse aqui!!</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionSeparador"></section>
+    
+    <!-- Espaço pro rodapé -->
+    <footer id="sectionRodape">
+        <div class="rodape">
+            <h1>Hello World</h1>
+            <div class="imagem">
+                <img src="img/facebook.png" alt="">
+                <img src="img/instagram.png" alt="">
+                <img src="img/twitter.png" alt="">
+                <img src="img/linkedin.png" alt="">
+                <img src="img/youtube.png" alt="">
+            </div>
+            <p>© Todos os Direitos Reservados - 2022.</p>
+        </div>
+    </footer>
+</body>
+<!-- Inclusão do arquivo com as validações -->
+<script src="JS/validacao.js"></script> <!-- Criar a pasta js/ -->
+<!-- Inclusão dos métodos adcionais, pra poder validar o cpfBR, por exemplo. -->
+<script src="JS/additional-methods.js"></script>
+<!-- Insere as máscaras, exemplo do cpf -->
+<script src="JS/jquery.mask.js"></script>
+<!-- Inclusão do arquivo das demos de validação em ptBR -->
+<script src="JS/messages_pt_BR.js"></script>
+
+<!-- Swiper JS swiperjs.com -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+</html>
