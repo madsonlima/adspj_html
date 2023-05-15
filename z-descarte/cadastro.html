@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <!-- Inclusão do jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!-- Inclusão do plugin de validação (jquery validation) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</head>
+<body>
+    <nav>
+        <img class = "logo" src="IMAGENS/logo.jpg" alt="logo" height="60px">
+        <a href="#" id="siteh1">First Project</a>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Login / Cadastro</a></li>
+            <li><a href="#">Meus Cursos</a></li>
+        </ul>
+    </nav>
+    <div class="cadastro">
+        <form name="frmCadastro" id="frmCadastro" method="POST" action="">
+            <h1>Cadastro de Usuário</h1>
+            <br>
+            <table>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" id="endereco" name="endereco" placeholder="ex.: Rua José Torres"></td>
+                </tr>
+                <tr>
+                    <td>Número:</td>
+                    <td><input type="number" id="numero" name="numero" placeholder="ex.: 1400"></td>
+                </tr>
+                <tr>
+                    <td>Complemento:</td>
+                    <td><input type="text" id="complemento" name="complemento" placeholder="ex.: A"></td>
+                </tr>
+                <tr>
+                    <td>Bairro:</td>
+                    <td><input type="text" id="bairro" name="bairro" placeholder="ex.: Conjunto Ceará"></td>     
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" id="cidade" name="cidade"  placeholder="ex.: Fortaleza"></td>
+                </tr>
+                <tr>
+                    <td>UF:</td>
+                    <td id="selectuf">
+                        <select name="uf">
+                            <option value="AM">AC</option>
+                            <option value="AP">AL</option>
+                            <option value="ES">AP</option>
+                            <option value="RN">AM</option>
+                            <option value="SP">BA</option>
+                            <option value="CE" selected>CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="RN">GO</option>
+                            <option value="SP">MA</option>
+                            <option value="DF">MT</option>
+                            <option value="ES">MS</option>
+                            <option value="RN">MG</option>
+                            <option value="SP">PA</option>
+                            <option value="DF">PB</option>
+                            <option value="ES">PR</option>
+                            <option value="RN">PE</option>
+                            <option value="SP">PI</option>
+                            <option value="DF">RJ</option>
+                            <option value="ES">RN</option>
+                            <option value="RN">RS</option>
+                            <option value="SP">RO</option>
+                            <option value="DF">RR</option>
+                            <option value="ES">SC</option>
+                            <option value="RN">SP</option>
+                            <option value="SP">SE</option>
+                            <option value="DF">TO</option>
+                        </select>			
+                    </td>
+                </tr>
+                <tr>
+                    <td>CEP:</td>
+                    <td><input type="text" name="cep" id="cep" onkeypress="$(this).mask('00000-000')" placeholder="60000-000"></td>
+                </tr>
+                <tr>
+                    <td><br>Nome:</td>
+                    <td><br><input type="text" id="nome" name="nome" placeholder="ex.: João"></td>
+                </tr>
+                <tr>
+                    <td>CPF:</td>
+                    <td><input type="text" name="cpf" id="cpf" onkeypress="$(this).mask('000.000.000-00')" placeholder="000.000.000-00"></td>
+                    <!-- onkeypress="$(this).mask('000.000.000-00')" -> este arquivo -> chama a referência do mask -->
+                </tr>
+                <tr>
+                    <td>Telefone<br>Celular:</td>
+                    <td><input type="text" name="telres" id="telres"  placeholder="(99)9999-9999" onkeypress="$(this).mask('(00)00000-0000')" required></td>	
+                </tr>
+                <tr>
+                    <td>Data de<br>Nascimento:</td>
+                    <td id="datanasctd"><input type="date" name="dataNasc" id="dataNasc" onkeypress="$(this).mask('00/00/0000')" placeholder="30/12/2000"></td>
+                </tr>
+                <tr>
+                    <td><br>Senha:</td>
+                    <td><br><input type="password" name="senha" id="senha" placeholder="••••••••" required></td>
+                </tr>
+                <tr>
+                    <td>Confirmar<br>senha:</td>
+                    <td><input type="password" name="confsenha" id="confsenha" placeholder="••••••••" required></td>
+                </tr>
+                <tr>
+                    <td id="termos" colspan="2">
+                        <br>
+                        <input type="checkbox" name="termo" required><label>Concordo com os termos.</label>
+                    </td>
+                </tr>
+            </table>		
+            <div class="botoesconcluir">
+                <br>
+                <button type="submit" >Concluir cadastro</button>
+                <button type="reset" >Limpar Formulário</button>
+            </div>
+        </form>
+    </div>
+    <!-- Inclusão do arquivo com as validações -->
+	<script src="JS/validacao.js"></script> <!-- Criar a pasta js/ -->
+	<!-- Inclusão dos métodos adcionais, pra poder validar o cpfBR, por exemplo. -->
+	<script src="JS/additional-methods.js"></script>
+	<!-- Insere as máscaras, exemplo do cpf -->
+	<script src="JS/jquery.mask.js"></script>
+	<!-- Inclusão do arquivo das demos de validação em ptBR -->
+	<script src="JS/messages_pt_BR.js"></script>
+</body>
+</html>

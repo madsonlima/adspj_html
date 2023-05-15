@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #004587;
+}
+/*------------------------------------------------------------*/
+#siteh1{
+    transition: 0.5s;
+}
+#siteh1:hover{
+    color: #f57f0a;
+}
+nav{
+    /*width: 100%;*/
+    display: flex;
+    align-items: center;
+}
+nav img{
+    padding-left: 10%;
+    padding-right: 1%;
+}
+nav a{
+    text-decoration: none;
+    color: #dacdac;
+    font-size: 30px;
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: flex; /*Para o posicionamento do menu*/
+    align-items: center; /*Coloca no centro horizontal*/
+    justify-content: right; /*Justifica para a direita*/
+    padding-right: 10%;
+}
+.menu li{
+    display: inline;
+    margin-left: 2%;
+    padding: 20px;
+    background-color: #f57f0a;
+}
+.menu li a{
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    background-color: #00000000;
+}
+/*------------------------------------------------------------*/
+.banner{
+    background-color: #f57f0a;
+}
+.banner img{
+    
+    width: 100%;
+    height: 400px;
+    /*height: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;*/
+}
+/*------------------------------------------------------------*/
+.cursos{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 4%;
+}
+.cursos button{
+    color: #171717;
+    background-color: #f57f0a;
+    border-color: #f57f0a;
+    padding: 3%;
+    margin: 3%;
+}
+.cursos img{
+    width: 50%; /*TAMANHO DA IMAGEM DO CURSO*/
+}
+.titulocurso{
+    color: #171717;
+    background-color: #00000000;
+    font-size: 20px;
+}
+.textocurso{
+    color: #171717;
+    background-color: #00000000;
+    font-size: 14px;
+}
+.cursos table{
+    width: 100%;
+}
+/*------------------------------------------------------------*/
+.tituloform{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5%;
+}
+.formsheet{
+    padding-top: 5%;
+    padding-bottom: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.formsheet input{
+    color: black;
+    background-color: white;
+    padding: 2%;
+}
+.formsheet a{
+    background-color: #00000000;
+    text-decoration: none;
+}
+.formsheet button{
+    font-weight: bolder;
+    color: rgb(17, 17, 17);
+    background-color: #f57f0a;
+    border-color: #f57f0a;
+    margin: auto;
+    width: 60%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.formularios{
+    width: 100%;
+    height: 350px;
+    background-color: #f57f0a;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formularios table{
+    width: 60%;
+}
+.rodape{
+    width: 100%;
+    height: 9vh;
+    align-items: center; /*Coloca no centro horizontal*/
+    justify-content: left;
+}
+.rodape h1{
+    margin-left: 10%;
+    padding: 2%;
+}
+/*------------------------------------------------------------*/
+h1{
+    text-align: center;
+}
+.cadastro td{
+    text-align: right;
+    padding: 1%;
+}
+.cadastro{
+    padding: 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #f57f0a;
+}
+.cadastro table{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cadastro form{
+    padding: 3%;
+    background-color: #004587;
+}
+.cadastro input{
+    color: black;
+    background-color: white;
+    padding: 1%;
+}
+.cadastro select{
+    color: black;
+    background-color: white;
+    padding: 1%;
+}
+#selectuf{
+    text-align: left;
+}
+#datanasctd{
+    text-align: left;
+}
+#termos{
+    text-align: center;
+}
+.cadastro .linha{
+    background-color: #0063c0;
+}
+.botoesconcluir{
+    margin-top: 3%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botoesconcluir button{
+    color: #171717;
+    background-color: #f57f0a;
+    border-color: #f57f0a;
+    padding: 3%;
+    margin: 3%;
+}
